@@ -118,6 +118,9 @@ Update the value you want to use within `scripts/eks-provision.sh`, this include
 > **Debugging note 1**: Make sure your product name (in line 5 and 6) within `eks-provision.sh` file is same as the product which contains description value of `eks-provisioner`.
 
 > **Debugging note 2**: If you have changed your product names while launching the stacks above, make sure the product names match to the parameters passed within `parameter/eks-provisioner.json` file.
+>
+> #Please Be advised, CodeCommit is no longer offered by AWS so you will need to migrate your project to github at this point
+> 
 
 > **Debugging note 3**: Make sure the product versions match with the variables in the `parameter/eks-provisioner.json` file. Entirely depends on how many updates you have done to product.
 
