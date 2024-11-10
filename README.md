@@ -126,4 +126,4 @@ Update the value you want to use within `scripts/eks-provision.sh`, this include
 
 After you have updated all of the above, run the script in your terminal.
 
-**> Please Be advised, CodeCommit is no longer offered by AWS so you will need to migrate your project to github at this point
+## Please Be advised, CodeCommit is no longer offered by AWS so you will need to migrate your project to github at this point
