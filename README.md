@@ -1,5 +1,5 @@
 # README
-
+## Medium article [https://medium.com/@vloidcloudtech](https://medium.com/@vloidcloudtech/the-exploration-of-security-as-code-devsecops-patterns-with-aws-7f83f6ca1924)
 Please follow these instructions to deploy the stacks successfully. There are some parameters which need to be edited before the stack is launched.
 
 > **Note: The instructions assume the IAM principal you are using contains all the permissions you need to perform these steps.**
