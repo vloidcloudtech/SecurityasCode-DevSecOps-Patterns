@@ -1,16 +1,31 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: Template to create CodeCommit repository, CodePipeline
+Description: Template to create a CodePipeline using a GitHub repository
+
 Parameters:
-  CodeCommitName:
+  GitHubToken:
     Type: String
-    Default: AutomatoonzRepo
+    Description: "GitHub OAuth Token for accessing the repository"
+  GitHubOwner:
+    Type: String
+    Default: "your-github-username"
+    Description: "The GitHub username or organization that owns the repository"
+  GitHubRepo:
+    Type: String
+    Default: "your-repository-name"
+    Description: "The name of the GitHub repository"
+  GitHubBranch:
+    Type: String
+    Default: "main"
+    Description: "The branch in the GitHub repository to track"
+  PipelineName:
+    Type: String
+    Default: "AutomatoonzPipeline"
+    Description: "The name of the pipeline"
 
 Resources:
-  CodecommitRepo:
-    Type: AWS::CodeCommit::Repository
+  # CodePipeline for GitHub integration
+  MyPipeline:
+    Type: AWS::CodePipeline::Pipeline
     Properties:
-      RepositoryName: !Ref CodeCommitName
-      RepositoryDescription: Repo created for Automatoonz team infra code
-      Tags:
-        - Key: Team
-          Value: Automatoonz
+      Name: !Ref PipelineName
+      RoleArn: arn:
